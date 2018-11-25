@@ -1,0 +1,89 @@
+body {
+	line-height: 1;
+}
+/*Common*/
+.red {
+	color: red;
+}
+.green {
+	color: #1f7244;
+}
+.yellow {
+	color: #e9cd80;
+}
+.orange {
+	color: #d04525;
+}
+.blue {
+	color: #285192;
+}
+.bold {
+	font-weight: 500;
+}
+.pad-5 {
+	padding: 5px;
+}
+.pad-10 {
+	padding: 10px;
+}
+
+/*CSS for drag area*/
+.dragArea {
+	text-align: center;
+	padding: 25px 0px;
+	border: 1px solid #ccc;
+	background-color: #f3f3f3;
+}
+#selectFiles {
+	cursor: pointer;
+	color: #007bff;
+}
+
+/*CSS for close button*/
+.alert-fileUpload .close {
+	margin-top: 2px;
+}
+
+/*CSS for notification*/
+ul#notification {
+	//font-size: 14px;
+	padding: 0;
+	margin-top: 5px;
+	list-style-type: none;
+}
+
+/*CSS for notification alerts*/
+div.alert-fileUpload {
+	padding: 2px 5px;
+	margin-top: 5px;
+	margin-bottom: 0px;
+}
+#fileUploadProgress {
+	margin-bottom: 0px;
+	background-color: #dcdcdc;
+}
+
+/*CSS for uploaded file section*/
+#uploadedFilesSection {
+	border: 1px solid #ccc;
+}
+#uploadedFilesSection #title {
+	font-weight: bold;
+	margin-top: 0px;
+	padding: 10px;
+	background-color: #eee;
+	border-bottom: 1px solid #ccc
+}
+
+.alert-fileUpload .close {
+	font-size: 18px;
+    padding: 0;
+    margin: -1px 5px;
+}
+.table#uploadedFilesTable td, .table#uploadedFilesTable th {
+	padding: 0.5rem;
+	vertical-align: middle;
+}
+.table#uploadedFilesTable {
+	margin-bottom:0px;
+}

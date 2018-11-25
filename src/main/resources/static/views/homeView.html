@@ -1,0 +1,29 @@
+<h2 class="text-center">File Upload Example</h3>
+<br/><br/>
+<div id="filesContainer">
+	<input type="file" id="file" name="file[]" multiple/>
+</div>
+<section id="uploadedFilesSection">
+	<div id="title">Uploaded Files</div>
+	<div class="text-center bold pad-5" ng-show="uploadedFiles.length==0">No files uploaded yet.</div>
+	<table class="table" ng-show="uploadedFiles.length>0" id="uploadedFilesTable" >
+		<thead>
+			<tr>
+				<th>#</th>
+				<th>Document Name</th>
+				<th>Document Size</th>
+				<th>Actions</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr ng-repeat="file in uploadedFiles">
+				<td>{{ $index + 1 }}</td>
+				<td><i class='{{ file.icon }}'></i> {{ file.name }}</td>
+				<td>{{ file.sizeWithUnit }}</td>
+				<td>
+					<button class="btn btn-sm btn-primary delete" ng-click="deleteFile($index)">Delete</button>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</section>
